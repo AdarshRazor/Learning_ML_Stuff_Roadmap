@@ -6,7 +6,6 @@ Adarsh Razor
 """
 
 #importing the libraries
-import numpy as np 
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -34,3 +33,10 @@ y_pred = regressor.predict(X_test)
 '''
 Here we putting X_test because X is independent variable and on basis of X, Y will be getting predicted
 '''
+plt.scatter(X_train, Y_train, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.show()
+
+plt.scatter(X_test, Y_test, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue') # comparing here with the test set
+plt.show()
