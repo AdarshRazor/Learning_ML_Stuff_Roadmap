@@ -31,3 +31,8 @@ Y_pred = predict(regressor, newdata = test_set)
 #Visualizing the dataset
 #install.packages('ggplot2')
 library(ggplot2)
+
+'
+Incomplete code 
+connect at adarashanshu7@gmail.com for the codes and explanation
+'
