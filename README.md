@@ -8,7 +8,7 @@ Happy Learning.
 ### Content
 
 1. Data Preprocessing
-2. [Regression Methods](https://github.com/AdarshRazor/Learning_ML_Stuff_Roadmap/tree/main/2.%20Regression)
+[2.](https://github.com/AdarshRazor/Learning_ML_Stuff_Roadmap/tree/main/2.%20Regression) Regression Methods
 3. Classification Methods
 4. Clustering Methods
 5. Association Rule Methods
