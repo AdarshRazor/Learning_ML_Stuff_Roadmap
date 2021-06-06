@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
+'''
 Created on Sun Jun  6 01:22:37 2021
 
 @author: AdarshRazor
-"""
+'''
 
 #importing the libraries
 import matplotlib.pyplot as plt
