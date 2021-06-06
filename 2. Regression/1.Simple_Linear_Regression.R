@@ -1,6 +1,8 @@
-#Adarsh Razor
+"
+Adarsh Razor
 
-#06-06-2021 02:10AM
+06-06-2021 02:10AM
+"
 
 #importing the dataset
 dataset = read.csv('1.SLR_Salary_Data.csv') 
@@ -9,8 +11,13 @@ dataset = read.csv('1.SLR_Salary_Data.csv')
 #install.packages('caTools')
 library(caTools) #this will activate the library to be used in the script
 
-set.seed(123)
+set.seed(123) #shuffle applied to data just like random_State in python
 
-split = sample.split(dataset$Salary, SplitRatio = 2/3)
+"
+Herer we are splitting the data and the split ratio is for training data instead of testing data
+The training set are marked to be true as we denoted it as TRUE
+The training set are marked to be true as we denoted it as FALSE
+"
+split = sample.split(dataset$Salary, SplitRatio = 2/3) 
 training_set = subset(dataset, split==TRUE)
 test_set = subset(dataset, split==FALSE)
