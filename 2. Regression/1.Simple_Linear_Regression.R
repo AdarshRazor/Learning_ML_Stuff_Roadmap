@@ -21,3 +21,13 @@ The training set are marked to be true as we denoted it as FALSE
 split = sample.split(dataset$Salary, SplitRatio = 2/3) 
 training_set = subset(dataset, split==TRUE)
 test_set = subset(dataset, split==FALSE)
+
+#Now we fitting our linear model and the formula
+regressor = lm(formula = Salary ~ YearsExperience, data = training_set)
+
+#Predicting the test set results
+Y_pred = predict(regressor, newdata = test_set)
+
+#Visualizing the dataset
+#install.packages('ggplot2')
+library(ggplot2)
