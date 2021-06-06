@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Adarsh Razor
+Created on Sun Jun  6 01:22:37 2021
 
-06-06-2021 01:22AM
+@author: AdarshRazor
 """
 
 #importing the libraries
