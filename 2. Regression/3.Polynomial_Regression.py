@@ -13,13 +13,10 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('3.PR_Position_Salaries.csv')
-X = dataset.iloc[:, 1:2].values
-y = dataset.iloc[:, 2].values
-plt.scatter(X, y, color = 'red')
-
-'''
-X = dataset.iloc[:, 1:2].values
-y = dataset.iloc[:, 2].values
+X = dataset.iloc[:, 1:2].values # taking independent variable
+y = dataset.iloc[:, 2].values   # taking dependent variable
+#Remove the comment to see the graph is plotting in polunomial way hence we will use ploynomial regression to understand the realtion
+#plt.scatter(X, y, color = 'red')
 
 # Splitting the dataset into the Training set and Test set
 """from sklearn.model_selection import train_test_split
