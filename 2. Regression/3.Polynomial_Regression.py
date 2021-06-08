@@ -13,7 +13,7 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('3.PR_Position_Salaries.csv')
-X = dataset.iloc[:, 1:2].values # taking independent variable
+X = dataset.iloc[:, 1:2].values # taking independent variable and we want feature in form of matrics. That's why putting it as 1:2
 y = dataset.iloc[:, 2].values   # taking dependent variable
 #Remove the comment to see the graph is plotting in polunomial way hence we will use ploynomial regression to understand the realtion
 #plt.scatter(X, y, color = 'red')
@@ -23,15 +23,17 @@ y = dataset.iloc[:, 2].values   # taking dependent variable
 """from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)"""
 
-
-# Fitting Linear Regression to the dataset
+'''
+We make both Linear Regression as well as Polynomial Regression to comapre between the 2 graph
+'''
+#  Linear Regression 
 from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
 lin_reg.fit(X, y)
 
-# Fitting Polynomial Regression to the dataset
+# Polynomial Regression 
 from sklearn.preprocessing import PolynomialFeatures
-poly_reg = PolynomialFeatures(degree = 4)
+poly_reg = PolynomialFeatures(degree = 9) # degreee of the polynomial features
 X_poly = poly_reg.fit_transform(X)
 poly_reg.fit(X_poly, y)
 lin_reg_2 = LinearRegression()
@@ -64,7 +66,7 @@ plt.ylabel('Salary')
 plt.show()
 
 # Predicting a new result with Linear Regression
-lin_reg.predict([[6.5]])
+pred_test1=lin_reg.predict([[6.5]]) # check in the vairable explorer
 
 # Predicting a new result with Polynomial Regression
-lin_reg_2.predict(poly_reg.fit_transform([[6.5]]))
+pred_test2=lin_reg_2.predict(poly_reg.fit_transform([[6.5]])) # check in the vairable explorer
