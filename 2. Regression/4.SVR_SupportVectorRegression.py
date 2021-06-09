@@ -21,11 +21,10 @@ y = dataset.iloc[:, 2].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)"""
 
 # Feature Scaling
-
 from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
+sc_X = StandardScaler()  
 sc_y = StandardScaler()
-X = sc_X.fit_transform(X)
+X = sc_X.fit_transform(X) # we are fitting the data to standard scalling
 y = sc_y.fit_transform(y.reshape(-1,1)) # reshape if your data has a single feature
 
 # Fitting SVR to the dataset
