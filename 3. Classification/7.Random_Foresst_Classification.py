@@ -36,6 +36,8 @@ y_pred = classifier.predict(X_test)
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+# [[63, 5], [4, 28]]
+# 63 + 28 = 91 are correct prediction and 5 + 4 = 9 incorrect prediction.
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
