@@ -6,6 +6,7 @@ Created on Sun Jun 13 02:40:40 2021
 """
 
 # This KNN algorithm is based on euclidean distance.
+# Read more in the README.md
 
 # Importing the libraries
 import numpy as np
