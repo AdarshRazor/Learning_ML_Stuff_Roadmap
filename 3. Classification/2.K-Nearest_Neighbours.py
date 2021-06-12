@@ -40,6 +40,9 @@ y_pred = classifier.predict(X_test)
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+# [[64, 4], [3, 29]]
+# 64 + 29 = 93 are correct prediction and 4 + 3 = 7 incorrect prediction.
+# compare the result with the logistic regression
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
