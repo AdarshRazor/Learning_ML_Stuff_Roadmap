@@ -36,9 +36,11 @@ classifier.fit(X_train, y_train)
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
 
-# Making the Confusion Matrix
+# Making the Confusion Matrix, checking if our model learned to predict or not. The prediction maybe correct and may fails
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+# [[65, 3], [8, 24]]
+# 65 + 24 = 89 are correct prediction and 8 + 3 = 11 incorrect prediction.
 
 # Visualising the Training set results
 from matplotlib.colors import ListedColormap
@@ -61,8 +63,11 @@ plt.show()
 # Visualising the Test set results
 from matplotlib.colors import ListedColormap
 X_set, y_set = X_test, y_test
-X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
-                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01))
+X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01), # making the graph
+                                        # taking the min by -1 so it wont stick to pne side of the graph
+                     np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.01)
+                         # we are doing the same for the salary                     # step is to make the resolution [ change to 0.5 to see the change ]
+                         )
 plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
              alpha = 0.75, cmap = ListedColormap(('red', 'green')))
 plt.xlim(X1.min(), X1.max())
