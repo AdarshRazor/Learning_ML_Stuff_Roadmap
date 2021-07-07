@@ -69,6 +69,8 @@ Examples of classification problems includes: differentiate between dogs and cat
 ![Classification-Image1]()
 ![Classification-Image2]()
 
+Topics under data preprocessing are as follows:
+
 - Logistic Regression
 - K-Nearest Neighbors
 - Support Vector Machine
