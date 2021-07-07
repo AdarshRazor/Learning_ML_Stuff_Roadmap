@@ -26,3 +26,16 @@ Happy Learning.
 
 ## 1. Data Preprocessing
 
+Data preprocessing is one of the important step in training machine learning model. We get a variety of training data from the internet and use it to train and predict. Many a times not all the data are **similar to one another** or many be user can encounter one or may be more **missing values** in the training data. 
+
+It's not just limit to manage data but we also learn about the importing the important **libraries** and how we can import **dataset.** Splitting the data into training and testing also comes under the data preprocessing.
+
+Topics under data preprocessing are as follows:
+
+- Importing Libraries
+- Importing Dataset
+- Missing Data
+- Categorical Data
+- Splitting the Dataset
+- Feature Scaling
+
