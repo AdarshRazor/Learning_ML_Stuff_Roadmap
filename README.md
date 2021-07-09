@@ -50,7 +50,7 @@ Here are some of the examples of Regression Methods.
 ![Regression-Image1]()
 ![Regression-Image2]()
 
-Topics under data preprocessing are as follows:
+Topics under Regression Methods are as follows:
 
 - Simple Linear Regression
 - Multiple Linear Regression
@@ -69,7 +69,7 @@ Examples of classification problems includes: differentiate between dogs and cat
 ![Classification-Image1]()
 ![Classification-Image2]()
 
-Topics under data preprocessing are as follows:
+Topics under Classification Methods are as follows:
 
 - Logistic Regression
 - K-Nearest Neighbors
@@ -78,4 +78,18 @@ Topics under data preprocessing are as follows:
 - Naive Bayes
 - Decision Tree Classification
 - Random Forest Classification
+
+<br>
+
+## 4. Clustering Methods
+
+Clustering is the task of grouping a set of objects into clusters. It comes under unsupervised learning as it does not require a training set.
+
+![Clustering-Image1]()
+![Clustering-Image2]()
+
+Topics under CLustering Methods are as follows:
+
+- K-Means Clustering
+- Hierarchical Clustering
 
